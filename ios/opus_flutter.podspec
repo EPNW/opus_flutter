@@ -13,6 +13,7 @@ libopus wrappers for flutter based on opus_dart
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Eric Prokop und Nils Wieler Hard- und Softwareentwicklung GbR' => 'prokopwieler.hardundsoftware@gmail.com' }
   s.dependency 'Flutter'
+  s.dependency 'opus-ios'
   s.platform = :ios, '9.0'
   
   s.source           = { :path => '.' }
