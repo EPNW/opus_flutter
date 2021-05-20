@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  flutter_share: ^1.0.2+1
+  share: ^2.0.1
   path_provider: ^1.6.10
   opus_flutter:
     path: ../

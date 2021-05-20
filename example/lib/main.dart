@@ -4,7 +4,7 @@ import 'dart:math' show min;
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_share/flutter_share.dart';
+import 'package:share/share.dart';
 import 'package:opus_flutter/opus_dart.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -93,10 +93,7 @@ class _OpusExampleState extends State<OpusExample> {
   }
 
   Future<void> _playFile(File f) async {
-    await FlutterShare.shareFile(
-        title: 'Play',
-        filePath: f.path,
-        text: 'Choose an audio app to play the output file.');
+    await Share.shareFiles([f.path]);
   }
 }
 

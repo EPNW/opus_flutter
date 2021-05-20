@@ -1,46 +1,28 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_share (0.0.1):
-    - Flutter
-  - opus_flutter (0.0.1):
-    - Flutter
   - path_provider (0.0.1):
     - Flutter
-  - path_provider_linux (0.0.1):
-    - Flutter
-  - path_provider_macos (0.0.1):
+  - share (0.0.1):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_share (from `.symlinks/plugins/flutter_share/ios`)
-  - opus_flutter (from `.symlinks/plugins/opus_flutter/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
-  - path_provider_linux (from `.symlinks/plugins/path_provider_linux/ios`)
-  - path_provider_macos (from `.symlinks/plugins/path_provider_macos/ios`)
+  - share (from `.symlinks/plugins/share/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  flutter_share:
-    :path: ".symlinks/plugins/flutter_share/ios"
-  opus_flutter:
-    :path: ".symlinks/plugins/opus_flutter/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
-  path_provider_linux:
-    :path: ".symlinks/plugins/path_provider_linux/ios"
-  path_provider_macos:
-    :path: ".symlinks/plugins/path_provider_macos/ios"
+  share:
+    :path: ".symlinks/plugins/share/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_share: 4be0208963c60b537e6255ed2ce1faae61cd9ac2
-  opus_flutter: 418703c7aada3542cd8c27b87a62e862d0f8a342
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
-  path_provider_linux: 4d630dc393e1f20364f3e3b4a2ff41d9674a84e4
-  path_provider_macos: f760a3c5b04357c380e2fddb6f9db6f3015897e0
+  share: 0b2c3e82132f5888bccca3351c504d0003b3b410
 
-PODFILE CHECKSUM: 3e00e850257d7ec6b15077d8fe2293d61ce8f7ca
+PODFILE CHECKSUM: 0f91d9c52337aecc643973ada5772e02de2c15e6
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.10.1
