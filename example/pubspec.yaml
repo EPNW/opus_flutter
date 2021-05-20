@@ -1,6 +1,6 @@
 name: opus_flutter_example
 description: Demonstrates how to use the opus_flutter plugin.
-publish_to: 'none'
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -8,9 +8,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^1.0.2
   share: ^2.0.1
-  path_provider: ^1.6.10
+  path_provider: ^2.0.1
   opus_flutter:
     path: ../
 

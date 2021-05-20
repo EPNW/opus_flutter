@@ -1,11 +1,11 @@
 name: opus_flutter
 description: libopus wrappers for flutter based on opus_dart, but with Android and iOS opus binaries included.
 version: 1.0.2
-author: EPNW <prokopwieler.hardundsoftware@gmail.com>
 homepage: https://github.com/EPNW/opus_flutter
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
@@ -14,4 +14,9 @@ dependencies:
 
 flutter:
   plugin:
-    androidPackage: eu.epnw.opus_flutter
+    platforms:
+      android:
+        package: eu.epnw.opus_flutter
+        pluginClass: OpusFlutterPlugin
+      ios:
+        pluginClass: OpusFlutterPlugin
