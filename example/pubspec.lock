@@ -58,17 +58,17 @@ packages:
   opus_dart:
     dependency: transitive
     description:
-      name: opus_dart
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.4"
+      path: "../../../vscode/opus_dart"
+      relative: true
+    source: path
+    version: "2.0.0"
   opus_flutter:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "1.0.2"
+    version: "2.0.0"
   path:
     dependency: transitive
     description:

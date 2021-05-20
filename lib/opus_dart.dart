@@ -17,5 +17,5 @@ export 'package:opus_dart/opus_dart.dart' hide initOpus;
 /// to be loaded manually and passed to this method using the [other]
 /// parameter. If you don't want to run on Android and iOS, have a look
 /// at the [opus_dart](https://pub.dev/packages/opus_dart) package instead.
-void initOpus([DynamicLibrary other]) =>
+void initOpus([DynamicLibrary? other]) =>
     Opus.initOpus(Loader.loadInternal(other: other));

@@ -4,9 +4,9 @@ import 'dart:math' show min;
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:share/share.dart';
 import 'package:opus_flutter/opus_dart.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:share/share.dart';
 
 void main() {
   initOpus();
@@ -56,11 +56,10 @@ class OpusExample extends StatefulWidget {
 }
 
 class _OpusExampleState extends State<OpusExample> {
-  bool _processing;
+  bool _processing = false;
 
   @override
   void initState() {
-    _processing = false;
     super.initState();
   }
 
@@ -75,7 +74,7 @@ class _OpusExampleState extends State<OpusExample> {
         ],
       );
     } else {
-      return RaisedButton(
+      return ElevatedButton(
         onPressed: () {
           setState(() {
             _processing = true;
@@ -116,6 +115,7 @@ Future<File> example(Stream<List<int>> input) async {
           application: Application.audio,
           copyOutput: true,
           fillUpLastFrame: true))
+      .cast<Uint8List?>()
       .transform(new StreamOpusDecoder.bytes(
           floatOutput: false,
           sampleRate: sampleRate,
@@ -138,7 +138,7 @@ Future<File> example(Stream<List<int>> input) async {
 
 const int wavHeaderSize = 44;
 
-Uint8List wavHeader({int sampleRate, int channels, int fileSize}) {
+Uint8List wavHeader({required int sampleRate,required  int channels,required int fileSize}) {
   const int sampleBits = 16; //We know this since we used opus
   const Endian endian = Endian.little;
   final int frameSize = ((sampleBits + 7) ~/ 8) * channels;
