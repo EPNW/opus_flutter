@@ -1,6 +1,6 @@
 name: opus_flutter
 description: libopus wrappers for flutter based on opus_dart, but with Android and iOS opus binaries included.
-version: 1.0.2
+version: 1.1.0
 homepage: https://github.com/EPNW/opus_flutter
 
 environment:

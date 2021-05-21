@@ -32,13 +32,4 @@ Most users don't need to care about this section, it serves merely documentation
 The instructions from [libopus-Android.mk](https://github.com/EPNW/libopus-Android.mk) where used to set up opus for Android. Then, the .git folder of opus was deleted, so that the opus source files are included in this repo.
 
 ### iOS [WIP]
-Currently, you have to build opus for iOS on your own since we don't know a way to automate this for you (suggestions welcomed!).
-To do this, clone [Chris Ballingers Opus-iOS](https://github.com/chrisballinger/Opus-iOS) repository.
-* Edit the included build-libopus.sh:
-Change the `VERSION` variable to match the current opus version (currently `1.3.1`) and adjust the `SDKVERSION` and `MINIOSVERSION` (at least `9.0`) to satisfy our needs.
-* Run build-libopus.sh from the command line.
-* Open opus/opus.xcodeproj
-* Select Generic iOS Device as Universal Target and press run to build the framework
-* Open the .packages file of the flutter project you want to include opus and find the path of opus_flutter
- (The path will point you to a lib folder, we call the parent folder of the lib folder `opus_flutter_root`)
-* Move the generated `opus.framework` folder to `opus_flutter_root/ios`
+With version 1.1.0 of this plugin, we included the xcframework from [here](https://github.com/EPNW/opus_xcframework).
