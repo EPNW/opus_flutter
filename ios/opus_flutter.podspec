@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.dependency 'Flutter'
   s.platform = :ios, '9.0'
   s.license = { :type => "MIT", :file => "LICENSE" }
-  s.vendored_frameworks = "opus.framework"
+  s.vendored_frameworks = "opus.xcframework"
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'

@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  opus_flutter: f4f444550e9b698965d0a0f6e2da426946031031
+  opus_flutter: 1ee252bb2c6dc276f9b82280debd8ff11e1901ae
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   share: 0b2c3e82132f5888bccca3351c504d0003b3b410
 
