@@ -22,5 +22,5 @@ flutter:
     platforms:
       android:
 #        package: eu.epnw.opus_flutter_android
-        dartPluginClass: OpusFlutterAndroid
+        pluginClass: OpusFlutterAndroid
         fileName: opus_flutter_android.dart

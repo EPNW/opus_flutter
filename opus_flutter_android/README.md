@@ -1,6 +1,6 @@
 # opus_flutter_android
 
-The macos implementation of [`opus_flutter`][1].
+The Android implementation of [`opus_flutter`][1].
 
 ## Usage
 
