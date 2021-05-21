@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9783755d-5273-4ac1-8835-fac5a1b50565" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/Android.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/.appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/LICENSE_PLEASE_READ.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/Makefile.mips" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/Makefile.unix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/NEWS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/OpusConfig.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/README.draft" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/autogen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/_kiss_fft_guts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/arm2gnu.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/arm_celt_map.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/armcpu.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/armcpu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/armopts.s.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/armopts_gnu.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/celt_fft_ne10.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/celt_mdct_ne10.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/celt_neon_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/celt_pitch_xcorr_arm_gnu.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/fft_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/fixed_arm64.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/fixed_armv4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/fixed_armv5e.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/kiss_fft_armv4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/kiss_fft_armv5e.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/mdct_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/pitch_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/arm/pitch_neon_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/bands.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/bands.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/celt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/celt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/celt_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/celt_encoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/celt_lpc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/celt_lpc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/cpu_support.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/cwrs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/cwrs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/dump_modes/dump_modes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/dump_modes/dump_modes_arch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/dump_modes/dump_modes_arm_ne10.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/ecintrin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/entcode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/entcode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/entdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/entdec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/entenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/entenc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/fixed_c5x.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/fixed_c6x.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/fixed_debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/fixed_generic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/float_cast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/kiss_fft.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/kiss_fft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/laplace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/laplace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mathops.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mathops.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mdct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mdct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mfrngcod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mips/celt_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mips/fixed_generic_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mips/kiss_fft_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mips/mdct_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mips/pitch_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/mips/vq_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/modes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/modes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/opus_custom_demo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/os_support.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/pitch.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/pitch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/quant_bands.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/quant_bands.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/rate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/rate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/stack_alloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/static_modes_fixed.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/static_modes_fixed_arm_ne10.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/static_modes_float.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/static_modes_float_arm_ne10.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_cwrs32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_dft.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_entropy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_laplace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_mathops.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_mdct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_rotation.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/tests/test_unit_types.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/vq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/vq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/celt_lpc_sse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/celt_lpc_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/pitch_sse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/pitch_sse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/pitch_sse2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/pitch_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/vq_sse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/vq_sse2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/x86_celt_map.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/x86cpu.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt/x86/x86cpu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt_headers.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/celt_sources.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/config.h.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/configure.ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/convert_android_asm.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/Doxyfile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/build_draft.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/build_isobmff.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/build_oggdraft.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/customdoxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/draft-ietf-codec-oggopus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/draft-ietf-codec-opus-update.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/draft-ietf-codec-opus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/draft-ietf-payload-rtp-opus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/opus_in_isobmff.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/opus_in_isobmff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/opus_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/opus_update.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/release.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/doc/trivial_example.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/include/opus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/include/opus_custom.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/include/opus_defines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/include/opus_multistream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/include/opus_projection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/include/opus_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/m4/as-gcc-inline-assembly.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/m4/ax_add_fortify_source.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/m4/opus-intrinsics.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus-uninstalled.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus_buildtype.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus_config.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus_functions.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus_headers.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus_sources.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/opus_sources.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/releases.sha2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/scripts/dump_rnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/scripts/rnn_train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/A2NLSF.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/API.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/CNG.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/HP_variable_cutoff.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/Inlines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/LPC_analysis_filter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/LPC_fit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/LPC_inv_pred_gain.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/LP_variable_cutoff.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/MacroCount.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/MacroDebug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF2A.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_VQ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_VQ_weights_laroia.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_decode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_del_dec_quant.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_encode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_stabilize.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NLSF_unpack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NSQ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NSQ.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/NSQ_del_dec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/PLC.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/PLC.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/SigProc_FIX.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/VAD.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/VQ_WMat_EC.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/ana_filt_bank_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/LPC_inv_pred_gain_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/LPC_inv_pred_gain_neon_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/NSQ_del_dec_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/NSQ_del_dec_neon_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/NSQ_neon.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/NSQ_neon.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/SigProc_FIX_armv4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/SigProc_FIX_armv5e.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/arm_silk_map.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/biquad_alt_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/biquad_alt_neon_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/macros_arm64.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/macros_armv4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/arm/macros_armv5e.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/biquad_alt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/bwexpander.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/bwexpander_32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/check_control_input.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/code_signs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/control.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/control_SNR.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/control_audio_bandwidth.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/control_codec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/debug.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/dec_API.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decode_core.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decode_frame.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decode_indices.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decode_parameters.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decode_pitch.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decode_pulses.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/decoder_set_fs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/define.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/enc_API.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/encode_indices.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/encode_pulses.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/errors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/LTP_analysis_filter_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/LTP_scale_ctrl_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/apply_sine_window_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/arm/warped_autocorrelation_FIX_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/arm/warped_autocorrelation_FIX_neon_intr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/autocorr_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/burg_modified_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/corrMatrix_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/encode_frame_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/find_LPC_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/find_LTP_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/find_pitch_lags_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/find_pred_coefs_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/k2a_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/k2a_Q16_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/main_FIX.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/mips/noise_shape_analysis_FIX_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/mips/prefilter_FIX_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/mips/warped_autocorrelation_FIX_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/noise_shape_analysis_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/pitch_analysis_core_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/process_gains_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/regularize_correlations_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/residual_energy16_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/residual_energy_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/schur64_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/schur_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/structs_FIX.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/vector_ops_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/warped_autocorrelation_FIX.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/x86/burg_modified_FIX_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/x86/prefilter_FIX_sse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/fixed/x86/vector_ops_FIX_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/LPC_analysis_filter_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/LPC_inv_pred_gain_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/LTP_analysis_filter_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/LTP_scale_ctrl_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/SigProc_FLP.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/apply_sine_window_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/autocorrelation_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/burg_modified_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/bwexpander_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/corrMatrix_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/encode_frame_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/energy_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/find_LPC_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/find_LTP_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/find_pitch_lags_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/find_pred_coefs_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/inner_product_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/k2a_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/main_FLP.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/noise_shape_analysis_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/pitch_analysis_core_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/process_gains_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/regularize_correlations_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/residual_energy_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/scale_copy_vector_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/scale_vector_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/schur_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/sort_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/structs_FLP.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/warped_autocorrelation_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/float/wrappers_FLP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/gain_quant.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/init_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/init_encoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/inner_prod_aligned.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/interpolate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/lin2log.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/log2lin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/macros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/main.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/mips/NSQ_del_dec_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/mips/macros_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/mips/sigproc_fix_mipsr1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/pitch_est_defines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/pitch_est_tables.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/process_NLSFs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/quant_LTP_gains.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_down2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_down2_3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_private_AR2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_private_IIR_FIR.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_private_down_FIR.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_private_up2_HQ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_rom.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_rom.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/resampler_structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/shell_coder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/sigm_Q15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/sort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/stereo_LR_to_MS.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/stereo_MS_to_LR.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/stereo_decode_pred.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/stereo_encode_pred.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/stereo_find_predictor.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/stereo_quant_pred.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/structs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/sum_sqr_shift.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/table_LSF_cos.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_LTP.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_NLSF_CB_NB_MB.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_NLSF_CB_WB.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_gain.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_other.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_pitch_lag.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tables_pulses_per_block.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tests/test_unit_LPC_inv_pred_gain.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/tuning_parameters.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/typedef.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/NSQ_del_dec_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/NSQ_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/SigProc_FIX_sse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/VAD_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/VQ_WMat_EC_sse4_1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/main_sse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk/x86/x86_silk_map.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk_headers.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/silk_sources.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/analysis.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/analysis.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/mapping_matrix.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/mapping_matrix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/mlp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/mlp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/mlp_data.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_compare.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_demo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_encoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_multistream.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_multistream_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_multistream_encoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_projection_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/opus_projection_encoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/repacketizer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/repacketizer_demo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/src/tansig_table.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/opus_decode_fuzzer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/opus_decode_fuzzer.options" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/opus_encode_regressions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/run_vectors.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/test_opus_api.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/test_opus_common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/test_opus_decode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/test_opus_encode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/test_opus_padding.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/tests/test_opus_projection.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/training/rnn_dump.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/training/rnn_train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/training/txt2hdf5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/update_version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/common.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/opus.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/opus.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/opus.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/opus_demo.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/opus_demo.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/test_opus_api.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/test_opus_api.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/test_opus_decode.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/test_opus_decode.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/test_opus_encode.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/VS2015/test_opus_encode.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/libopus/win32/genversion.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/eu/epnw/opus_flutter/OpusFlutterPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/example/example/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values-night/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/s16le_16000hz_mono.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/s16le_16000hz_mono.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/OpusFlutterPlugin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/OpusFlutterPlugin.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftOpusFlutterPlugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/opus_flutter.podspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opus_dart.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opus_flutter.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/opus_flutter.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opus_flutter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/gen_wrappers.dart" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/opus_flutter/lib/opus_flutter.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/opus_flutter_platform_interface/lib/opus_flutter_platform_unsupported.dart" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="75" />
+    <option name="y" value="370" />
+    <option name="width" value="1600" />
+    <option name="height" value="710" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="opus_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="opus_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="opus_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="opus_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="opus_flutter_platform_interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="opus_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opus_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="opus_flutter_platform_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="D:/android_sdk" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/opus_flutter_platform_interface" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9783755d-5273-4ac1-8835-fac5a1b50565" name="Default Changelist" comment="" />
+      <created>1621603266097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621603266097</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3295302" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Dart Analysis" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="make" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/opus_flutter_platform_interface/lib/opus_flutter_platform_unsupported.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opus_flutter_platform_interface/lib/opus_flutter_platform_interface.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="86" lean-forward="true" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opus_flutter/lib/opus_flutter.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
