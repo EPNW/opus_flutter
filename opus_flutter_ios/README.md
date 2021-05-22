@@ -20,7 +20,7 @@ dependencies:
   ...
 ```
 
-If you wish to use the ios package only, you can add  `opus_flutter_ios` as a
+If you wish to use the iOS package only, you can add `opus_flutter_ios` as a
 dependency:
 
 ```yaml

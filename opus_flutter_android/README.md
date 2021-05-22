@@ -20,7 +20,7 @@ dependencies:
   ...
 ```
 
-If you wish to use the android package only, you can add  `opus_flutter_android` as a
+If you wish to use the Android package only, you can add `opus_flutter_android` as a
 dependency:
 
 ```yaml

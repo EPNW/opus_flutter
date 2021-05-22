@@ -1,6 +1,6 @@
 # opus_flutter_windows
 
-The Android implementation of [`opus_flutter`][1].
+The Windows implementation of [`opus_flutter`][1].
 
 ## Usage
 
@@ -20,7 +20,7 @@ dependencies:
   ...
 ```
 
-If you wish to use the android package only, you can add  `opus_flutter_windows` as a
+If you wish to use the Windows package only, you can add `opus_flutter_windows` as a
 dependency:
 
 ```yaml
@@ -33,7 +33,7 @@ dependencies:
 
 ## How opus is contained in this package
 Until Flutters Windows build system is more mature, we are follwing the recommendation from [Define distribution system for native libraries in Pub and/or Flutter](https://github.com/dart-lang/sdk/issues/36712).
-This means, that prebuild opus libraries are contained in this package for x64 and x86_64 architectures. They are on load time copied to a temporary directory using [path_provider](https://pub.dev/packages/path_provider) and then loaded from there.
+This means, that prebuild opus libraries are contained in this package for x86 and x86_64 architectures. They are on runtime copied to a temporary directory using [path_provider](https://pub.dev/packages/path_provider) and then loaded from there.
 
 
 [1]: ../opus_flutter
