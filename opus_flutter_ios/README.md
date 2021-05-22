@@ -1,6 +1,6 @@
-# opus_flutter_android
+# opus_flutter_ios
 
-The Android implementation of [`opus_flutter`][1].
+The iOS implementation of [`opus_flutter`][1].
 
 ## Usage
 
@@ -20,19 +20,19 @@ dependencies:
   ...
 ```
 
-If you wish to use the android package only, you can add  `opus_flutter_android` as a
+If you wish to use the ios package only, you can add  `opus_flutter_ios` as a
 dependency:
 
 ```yaml
 ...
 dependencies:
   ...
-  opus_flutter_android: ^2.0.0
+  opus_flutter_ios: ^2.0.0
   ...
 ```
 
 ## How opus is contained in this package
-The instructions from [libopus-Android.mk](https://github.com/EPNW/libopus-Android.mk) where used to set up opus for Android. Then, the `.git` folder of the cloned opus was deleted, so that the opus source files are included in this repo.
+[opus_xcframework](https://github.com/EPNW/opus_xcframework) is incorporated into this plugin.
 
 
 [1]: ../opus_flutter

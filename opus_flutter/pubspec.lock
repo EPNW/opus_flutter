@@ -34,6 +34,13 @@ packages:
       relative: true
     source: path
     version: "2.0.0"
+  opus_flutter_ios:
+    dependency: "direct main"
+    description:
+      path: "../opus_flutter_ios"
+      relative: true
+    source: path
+    version: "2.0.0"
   opus_flutter_platform_interface:
     dependency: "direct main"
     description:

@@ -19,9 +19,13 @@ dependencies:
   # https://github.com/flutter/flutter/issues/46264
   opus_flutter_android:
     path: ../opus_flutter_android
+  opus_flutter_ios:
+    path: ../opus_flutter_ios
 
 flutter:
   plugin:
     platforms:
       android:
         default_package: opus_flutter_android
+      ios:
+        default_package: opus_flutter_ios
