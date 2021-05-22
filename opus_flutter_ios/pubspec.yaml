@@ -19,6 +19,7 @@ dev_dependencies:
 
 flutter:
  plugin:
+    implements: opus_flutter
     platforms:
       ios:
         pluginClass: OpusFlutterIosPlugin
