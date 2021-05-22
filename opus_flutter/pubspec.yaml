@@ -21,6 +21,8 @@ dependencies:
     path: ../opus_flutter_android
   opus_flutter_ios:
     path: ../opus_flutter_ios
+  opus_flutter_windows:
+    path: ../opus_flutter_windows
 
 flutter:
   plugin:
@@ -29,3 +31,5 @@ flutter:
         default_package: opus_flutter_android
       ios:
         default_package: opus_flutter_ios
+      windows:
+        default_package: opus_flutter_windows

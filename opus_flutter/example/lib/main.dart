@@ -10,6 +10,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:share/share.dart';
 
 Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
   initOpus(await opus_flutter.load());
   runApp(OpusFlutter());
 }
@@ -93,7 +94,13 @@ class _OpusExampleState extends State<OpusExample> {
   }
 
   Future<void> _playFile(File f) async {
-    await Share.shareFiles([f.path]);
+    if(Platform.isWindows){
+	// Share is currently not implemented on Windows, so just print the location
+	// TODO revise once flutter supports sharing on Windows
+	  print('Your output is at ${f.absolute.path}');
+	} else {
+	  await Share.shareFiles([f.path]);
+	}
   }
 }
 

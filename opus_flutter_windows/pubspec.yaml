@@ -1,0 +1,31 @@
+name: opus_flutter_windows
+description: Windows implementation of the opus_flutter plugin.
+repository: https://github.com/EPNW/opus_flutter/tree/master/opus_flutter_windows
+version: 2.0.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  opus_flutter_platform_interface:
+    path: ../opus_flutter_platform_interface
+  path_provider: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/opus_license.txt
+    - assets/libopus_x64.dll.blob
+#TODO add assets/libopus_x86.dll.blob
+  plugin:
+    implements: opus_flutter
+    platforms:
+      windows:
+        dartPluginClass: OpusFlutterWindows
+        pluginClass: none
