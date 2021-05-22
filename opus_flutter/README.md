@@ -1,8 +1,8 @@
 # opus_flutter
 With the upcoming of the federal plugin system, this package was reorganized.
-Instead of providing access to the opus functions, it is now just a loader package to obtain a `DynamicLibrary` for  [opus_dart](https://pub.dev/packages/opus_dart) on flutter-based projects.
+Instead of providing access to the opus functions, it is now just a loader package to obtain a `DynamicLibrary` for [opus_dart](https://pub.dev/packages/opus_dart) on flutter-based projects.
 The overall scheme is now the following:
-TODO insert image
+![scheme](./doc/scheme.svg)
 
 ## Versioning
 Currently, opus 1.3.1 is loaded.

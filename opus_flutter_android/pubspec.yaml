@@ -19,8 +19,8 @@ dev_dependencies:
 
 flutter:
   plugin:
+    implements: opus_flutter
     platforms:
       android:
-#        package: eu.epnw.opus_flutter_android
-        pluginClass: OpusFlutterAndroid
-        fileName: opus_flutter_android.dart
+        package: eu.epnw.opus_flutter_android
+        pluginClass: OpusFlutterAndroidPlugin

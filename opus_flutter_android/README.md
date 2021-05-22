@@ -31,4 +31,8 @@ dependencies:
   ...
 ```
 
+## How opus is build for Android
+The instructions from [libopus-Android.mk](https://github.com/EPNW/libopus-Android.mk) where used to set up opus for Android. Then, the `.git` folder of the cloned opus was deleted, so that the opus source files are included in this repo.
+
+
 [1]: ../opus_flutter
