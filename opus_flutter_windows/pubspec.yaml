@@ -10,8 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  opus_flutter_platform_interface:
-    path: ../opus_flutter_platform_interface
+  opus_flutter_platform_interface: ^2.0.0
   path_provider: ^2.0.1
 
 dev_dependencies:
