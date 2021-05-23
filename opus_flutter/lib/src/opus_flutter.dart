@@ -30,6 +30,8 @@ void _flutterIssue81421Workaround() {
   }
 }
 
+/// On supported platforms a [DynamicLibrary] of the [opus audio codec](https://opus-codec.org/) is returned,
+/// whereas on not supported platforms an [UnsupportedError] is thrown. 
 Future<DynamicLibrary> load() {
   _flutterIssue52267Workaround();
   _flutterIssue81421Workaround();
