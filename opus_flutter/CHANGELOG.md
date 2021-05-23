@@ -1,3 +1,8 @@
+## 2.0.1
+
+* libopus 1.3.1
+* Minor formating fixes
+
 ## 2.0.0
 
 * libopus 1.3.1
