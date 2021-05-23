@@ -22,7 +22,7 @@ flutter:
   assets:
     - assets/opus_license.txt
     - assets/libopus_x64.dll.blob
-#TODO add assets/libopus_x86.dll.blob
+    - assets/libopus_x86.dll.blob
   plugin:
     implements: opus_flutter
     platforms:

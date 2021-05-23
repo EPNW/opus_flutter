@@ -33,7 +33,8 @@ dependencies:
 
 ## How opus is contained in this package
 Until Flutters Windows build system is more mature, we are follwing the recommendation from [Define distribution system for native libraries in Pub and/or Flutter](https://github.com/dart-lang/sdk/issues/36712).
-This means, that prebuild opus libraries are contained in this package for x86 and x86_64 architectures. They are on runtime copied to a temporary directory using [path_provider](https://pub.dev/packages/path_provider) and then loaded from there.
+This means, that prebuild opus libraries are contained in this package for x86 and x86_64 architectures. They are on runtime copied to a temporary directory using [path_provider](https://pub.dev/packages/path_provider) and then loaded from there. The contained binaries were build using docker with [`Dockerfile`][2].
 
 
 [1]: ../opus_flutter
+[2]: ./Dockerfile
