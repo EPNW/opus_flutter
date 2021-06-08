@@ -1,3 +1,6 @@
+## 3.0.2
+* More README fixes
+
 ## 3.0.1
 * README fix
 

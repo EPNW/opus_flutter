@@ -1,4 +1,4 @@
-# opus_flutter_android
+# opus_flutter_web
 
 The web implementation of [`opus_flutter`][1].
 
@@ -20,7 +20,7 @@ dependencies:
   ...
 ```
 
-If you wish to use the Android package only, you can add `opus_flutter_web` as a
+If you wish to use the web package only, you can add `opus_flutter_web` as a
 dependency:
 
 ```yaml
