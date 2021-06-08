@@ -1,7 +1,14 @@
+## 3.0.0
+
+* libopus 1.3.1
+* Web support using [`web_ffi`](https://pub.dev/packages/web_ffi)
+
+
 ## 2.0.1
 
 * libopus 1.3.1
 * Minor formating fixes
+
 
 ## 2.0.0
 
@@ -10,6 +17,7 @@
 * Moved to federal plugin structure
 * Removed re-export of the opus_dart library, see README
 
+
 ## 1.1.0
 
 * libopus 1.3.1
@@ -17,10 +25,12 @@
 * Migrated to new plugin map in pubspec.yaml
 * Included iOS binaries
 
+
 ## 1.0.1
 
 * libopus 1.3.1
 * Update for opus_dart 1.0.3
+
 
 ## 1.0.0
 

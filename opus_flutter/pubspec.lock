@@ -47,28 +47,28 @@ packages:
       name: opus_flutter_android
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.0"
   opus_flutter_ios:
     dependency: "direct main"
     description:
       name: opus_flutter_ios
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.0"
   opus_flutter_platform_interface:
     dependency: "direct main"
     description:
       name: opus_flutter_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.0"
   opus_flutter_windows:
     dependency: "direct main"
     description:
       name: opus_flutter_windows
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.0"
   path:
     dependency: transitive
     description:

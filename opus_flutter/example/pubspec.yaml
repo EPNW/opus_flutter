@@ -1,18 +1,19 @@
 name: opus_flutter_example
 description: Demonstrates how to use the opus_flutter plugin.
 version: 1.0.0+1
-publish_to: 'none'
+publish_to: "none"
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  opus_dart: ^2.0.0
+  opus_dart: ^3.0.0
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  share: ^2.0.1
+  share_plus: ^2.1.2
   path_provider: ^2.0.1
+  js: ^0.6.3
+  inject_js: ^2.0.0
   opus_flutter:
     path: ../
 
@@ -20,3 +21,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/s16le_16000hz_mono.raw
+    - assets/download.js

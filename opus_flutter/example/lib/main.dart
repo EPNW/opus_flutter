@@ -1,15 +1,14 @@
 import 'dart:convert';
-import 'dart:io';
 import 'dart:math' show min;
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:opus_flutter/opus_flutter.dart' as opus_flutter;
 import 'package:opus_dart/opus_dart.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:share/share.dart';
 
-Future<void> main() async{
+import 'share.dart' if (dart.library.js) 'download.dart';
+
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   initOpus(await opus_flutter.load());
   runApp(OpusFlutter());
@@ -81,37 +80,26 @@ class _OpusExampleState extends State<OpusExample> {
           setState(() {
             _processing = true;
           });
-          example(exampleRawStream(context)).then((File f) {
+          example(exampleRawStream(context)).then((Uint8List data) {
             setState(() {
               _processing = false;
             });
-            _playFile(f);
+            shareOrDownload(data);
           });
         },
         child: const Text('Start'),
       );
     }
   }
-
-  Future<void> _playFile(File f) async {
-    if(Platform.isWindows){
-	// Share is currently not implemented on Windows, so just print the location
-	// TODO revise once flutter supports sharing on Windows
-	  print('Your output is at ${f.absolute.path}');
-	} else {
-	  await Share.shareFiles([f.path]);
-	}
-  }
 }
 
 /// This is mostly the same example as from the opus_dart package:
-/// Get a stream, encode it and decode it, then save it to the harddrive.
+/// Get a stream, encode it and decode it, then share it.
 /// Add a wav header, so it can be played by any sound app.
-Future<File> example(Stream<List<int>> input) async {
+Future<Uint8List> example(Stream<List<int>> input) async {
   const int sampleRate = 16000;
   const int channels = 1;
-  File file = new File((await getTemporaryDirectory()).path + '/output.wav');
-  IOSink output = file.openWrite();
+  List<Uint8List> output = [];
   output.add(new Uint8List(wavHeaderSize)); //Reserve space for the header
   //Encode and decode using opus
   await input
@@ -130,23 +118,27 @@ Future<File> example(Stream<List<int>> input) async {
           channels: channels,
           copyOutput: true,
           forwardErrorCorrection: false))
-      .cast<List<int>>()
-      .pipe(output);
-  await output.close();
+      .cast<Uint8List>()
+      .forEach(output.add);
+  int length = output.fold(0, (int l, Uint8List element) => l + element.length);
   //Write the wav header
-  RandomAccessFile r = await file.open(mode: FileMode.append);
-  await r.setPosition(0);
-  await r.writeFrom(wavHeader(
-      channels: channels,
-      sampleRate: sampleRate,
-      fileSize: await file.length()));
-  await r.close();
-  return file;
+  Uint8List header =
+      wavHeader(channels: channels, sampleRate: sampleRate, fileSize: length);
+  output[0] = header;
+  // Merge into a single Uint8List
+  Uint8List flat = new Uint8List(length);
+  int index = 0;
+  for (Uint8List element in output) {
+    flat.setAll(index, element);
+    index += element.length;
+  }
+  return flat;
 }
 
 const int wavHeaderSize = 44;
 
-Uint8List wavHeader({required int sampleRate,required  int channels,required int fileSize}) {
+Uint8List wavHeader(
+    {required int sampleRate, required int channels, required int fileSize}) {
   const int sampleBits = 16; //We know this since we used opus
   const Endian endian = Endian.little;
   final int frameSize = ((sampleBits + 7) ~/ 8) * channels;

@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'dart:io' show Platform;
 
 import 'package:opus_flutter_android/opus_flutter_android.dart';
