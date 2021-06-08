@@ -11,14 +11,16 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
   static const String _licenseFile = 'opus_license.txt';
 
   static Future<String> _copyFiles() async {
-    String tmpPath=(await getTemporaryDirectory()).absolute.path;
-    Directory dir = new Directory('$tmpPath/opus_flutter_windows/opus').absolute;
+    String tmpPath = (await getTemporaryDirectory()).absolute.path;
+    Directory dir =
+        new Directory('$tmpPath/opus_flutter_windows/opus').absolute;
     await dir.create(recursive: true);
 
     ByteData data;
     File f = new File('${dir.path}/$_licenseFile');
     if (!(await f.exists())) {
-      data = await rootBundle.load('packages/opus_flutter_windows/assets/$_licenseFile');
+      data = await rootBundle
+          .load('packages/opus_flutter_windows/assets/$_licenseFile');
       await f.writeAsBytes(
           data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
     }
@@ -47,8 +49,8 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
     OpusFlutterPlatform.instance = new OpusFlutterWindows();
   }
 
-  /// Opens the shared opus library build by this plugin.
-  Future<DynamicLibrary> load() async {
+  /// Opens the shared opus library included in this plugin.
+  Future<dynamic> load() async {
     String libPath = await _copyFiles();
     return DynamicLibrary.open(libPath);
   }

@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ffi';
 
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
@@ -31,8 +30,16 @@ abstract class OpusFlutterPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  /// Obtains a [DynamicLibrary] of `libopus` on the current platform.
-  Future<DynamicLibrary> load() {
+  /// Obtains a `DynamicLibrary` of `libopus` on the current platform.
+  ///
+  /// On platforms where there is [dart:ffi], the returned object is a
+  /// [dart:ffi DynamicLibrary](https://api.dart.dev/stable/dart-ffi/DynamicLibrary-class.html),
+  /// so it is safe to cast it.
+  ///
+  /// On the web, where there is no [dart:ffi], the returned object is a
+  /// [web_ffi DynamicLibrary](https://pub.dev/documentation/web_ffi/latest/web_ffi/DynamicLibrary-class.html),
+  /// so it is safe to cast it.
+  Future<dynamic> load() {
     throw UnimplementedError('load() has not been implemented.');
   }
 }

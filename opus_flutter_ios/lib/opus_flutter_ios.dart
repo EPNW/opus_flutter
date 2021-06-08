@@ -5,8 +5,8 @@ import 'package:opus_flutter_platform_interface/opus_flutter_platform_interface.
 
 /// An implementation of [OpusFlutterPlatform] for iOS.
 class OpusFlutterIOS extends OpusFlutterPlatform {
-  /// Opens the shared opus library build by this plugin.
-  Future<DynamicLibrary> load() async {
+  /// Opens the static opus library build into this plugin.
+  Future<dynamic> load() async {
     return DynamicLibrary.process();
   }
 }

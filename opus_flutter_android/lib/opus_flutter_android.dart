@@ -6,7 +6,7 @@ import 'package:opus_flutter_platform_interface/opus_flutter_platform_interface.
 /// An implementation of [OpusFlutterPlatform] for Android.
 class OpusFlutterAndroid extends OpusFlutterPlatform {
   /// Opens the shared opus library build by this plugin.
-  Future<DynamicLibrary> load() async {
+  Future<dynamic> load() async {
     return DynamicLibrary.open('libopus.so');
   }
 }

@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ffi';
 
 import 'opus_flutter_platform_interface.dart';
 
@@ -7,7 +6,7 @@ import 'opus_flutter_platform_interface.dart';
 class OpusFlutterPlatformUnsupported extends OpusFlutterPlatform {
 
   /// Always throws an [UnsupportedError].
-  Future<DynamicLibrary> load() {
+  Future<dynamic> load() {
     throw new UnsupportedError('Automatic loading is not supported on this platform!');
   }
 }
