@@ -12,7 +12,7 @@ const String _binaryMime = 'application/octet-stream';
 
 bool _injected = false;
 
-Future<void> saveOrDownload(Uint8List data) async {
+Future<void> shareOrDownload(Uint8List data) async {
   if (!_injected) {
     await InjectJs.importLibrary('assets/download.js');
     _injected = true;

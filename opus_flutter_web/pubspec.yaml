@@ -1,0 +1,32 @@
+name: opus_flutter_web
+description: Web implementation of the opus_flutter plugin.
+repository: https://github.com/EPNW/opus_flutter/tree/master/opus_flutter_web
+version: 3.0.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  opus_flutter_platform_interface: ^3.0.0
+  inject_js: ^2.0.0
+  web_ffi: ^0.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/libopus.js
+    - assets/libopus.wasm
+  plugin:
+    implements: opus_flutter
+    platforms:
+      web:
+        pluginClass: OpusFlutterWeb
+        fileName: opus_flutter_web.dart

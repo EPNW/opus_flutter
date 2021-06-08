@@ -102,6 +102,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.0"
+  opus_flutter_web:
+    dependency: transitive
+    description:
+      path: "../../opus_flutter_web"
+      relative: true
+    source: path
+    version: "3.0.0"
   opus_flutter_windows:
     dependency: transitive
     description:
