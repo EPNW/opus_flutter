@@ -19,8 +19,7 @@ dependencies:
   opus_flutter_android: ^3.0.0
   opus_flutter_ios: ^3.0.0
   opus_flutter_windows: ^3.0.0
-  opus_flutter_web:
-    path: ../opus_flutter_web
+  opus_flutter_web: ^3.0.0
 
 flutter:
   plugin:

@@ -32,7 +32,7 @@ dependencies:
 ```
 
 ## How opus is contained in this package
-[Emscripten was](https://emscripten.org) used to build WebAssembly and the JavaScript glue. The build commands can be found in the [Dockerfile](./Dockerfile). Then, both, the WebAssembly and JavaScript file are added as Flutter assets and used from there. See [web_ffi's example](https://github.com/EPNW/web_ffi/blob/master/example/README.md) for more information on how WebAssembly can be loaded.
+[Emscripten](https://emscripten.org) was used to build WebAssembly and the JavaScript glue. The build commands can be found in the [Dockerfile](./Dockerfile). Then, both, the WebAssembly and JavaScript file are added as Flutter assets and used from there. See [web_ffi's example](https://github.com/EPNW/web_ffi/blob/master/example/README.md) for more information on how WebAssembly can be loaded.
 
 
 [1]: ../opus_flutter
