@@ -1,3 +1,8 @@
+## 3.0.1
+
+* libopus 1.3.1
+* Depend on newer opus_flutter_web version
+
 ## 3.0.0
 
 * libopus 1.3.1

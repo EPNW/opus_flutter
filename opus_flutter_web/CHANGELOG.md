@@ -1,3 +1,6 @@
+## 3.0.3
+* Depend on newer web_ffi version
+
 ## 3.0.2
 * More README fixes
 

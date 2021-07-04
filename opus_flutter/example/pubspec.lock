@@ -80,7 +80,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "3.0.0"
+    version: "3.0.1"
   opus_flutter_android:
     dependency: transitive
     description:
@@ -108,7 +108,7 @@ packages:
       name: opus_flutter_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.1"
+    version: "3.0.3"
   opus_flutter_windows:
     dependency: transitive
     description:
@@ -288,7 +288,7 @@ packages:
       name: web_ffi
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.7.1"
+    version: "0.7.2"
   win32:
     dependency: transitive
     description:

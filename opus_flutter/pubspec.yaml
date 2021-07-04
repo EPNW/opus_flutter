@@ -1,7 +1,7 @@
 name: opus_flutter
 description: Loads a DynamicLibrary of opus for usage with opus_dart on flutter platforms.
 repository: https://github.com/EPNW/opus_flutter/tree/master/opus_flutter
-version: 3.0.0
+version: 3.0.1
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -19,7 +19,7 @@ dependencies:
   opus_flutter_android: ^3.0.0
   opus_flutter_ios: ^3.0.0
   opus_flutter_windows: ^3.0.0
-  opus_flutter_web: ^3.0.0
+  opus_flutter_web: ^3.0.3
 
 flutter:
   plugin:
