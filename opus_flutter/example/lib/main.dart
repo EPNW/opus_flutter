@@ -5,13 +5,12 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:opus_flutter/opus_flutter.dart' as opus_flutter;
 import 'package:opus_dart/opus_dart.dart';
-
-import 'share.dart' if (dart.library.js) 'download.dart';
+import 'package:share_plus/share_plus.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   initOpus(await opus_flutter.load());
-  runApp(OpusFlutter());
+  runApp(const OpusFlutter());
 }
 
 /// Even if we could load the file as whole, we create a stream out of it
@@ -26,12 +25,14 @@ Stream<List<int>> exampleRawStream(BuildContext context) async* {
     int r = min(portionSize, data.lengthInBytes - i);
     yield data.buffer.asUint8List(data.offsetInBytes + i, r);
     i += r;
-    await new Future.delayed(
+    await Future.delayed(
         const Duration(milliseconds: 10)); //Simulate network latency
   }
 }
 
 class OpusFlutter extends StatelessWidget {
+  const OpusFlutter({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -44,7 +45,7 @@ class OpusFlutter extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
               Text('Version: ${getOpusVersion()}\n'),
-              OpusExample()
+              const OpusExample()
             ])),
       ),
     );
@@ -52,8 +53,10 @@ class OpusFlutter extends StatelessWidget {
 }
 
 class OpusExample extends StatefulWidget {
+  const OpusExample({super.key});
+
   @override
-  _OpusExampleState createState() => _OpusExampleState();
+  State<OpusExample> createState() => _OpusExampleState();
 }
 
 class _OpusExampleState extends State<OpusExample> {
@@ -67,12 +70,9 @@ class _OpusExampleState extends State<OpusExample> {
   @override
   Widget build(BuildContext context) {
     if (_processing) {
-      return Column(
+      return const Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Container(child: CircularProgressIndicator()),
-          Text('Processing...')
-        ],
+        children: <Widget>[CircularProgressIndicator(), Text('Processing...')],
       );
     } else {
       return ElevatedButton(
@@ -84,7 +84,7 @@ class _OpusExampleState extends State<OpusExample> {
             setState(() {
               _processing = false;
             });
-            shareOrDownload(data);
+            _share(data);
           });
         },
         child: const Text('Start'),
@@ -100,10 +100,10 @@ Future<Uint8List> example(Stream<List<int>> input) async {
   const int sampleRate = 16000;
   const int channels = 1;
   List<Uint8List> output = [];
-  output.add(new Uint8List(wavHeaderSize)); //Reserve space for the header
+  output.add(Uint8List(wavHeaderSize)); //Reserve space for the header
   //Encode and decode using opus
   await input
-      .transform(new StreamOpusEncoder.bytes(
+      .transform(StreamOpusEncoder.bytes(
           floatInput: false,
           frameTime: FrameTime.ms20,
           sampleRate: sampleRate,
@@ -112,7 +112,7 @@ Future<Uint8List> example(Stream<List<int>> input) async {
           copyOutput: true,
           fillUpLastFrame: true))
       .cast<Uint8List?>()
-      .transform(new StreamOpusDecoder.bytes(
+      .transform(StreamOpusDecoder.bytes(
           floatOutput: false,
           sampleRate: sampleRate,
           channels: channels,
@@ -126,7 +126,7 @@ Future<Uint8List> example(Stream<List<int>> input) async {
       wavHeader(channels: channels, sampleRate: sampleRate, fileSize: length);
   output[0] = header;
   // Merge into a single Uint8List
-  Uint8List flat = new Uint8List(length);
+  Uint8List flat = Uint8List(length);
   int index = 0;
   for (Uint8List element in output) {
     flat.setAll(index, element);
@@ -142,7 +142,7 @@ Uint8List wavHeader(
   const int sampleBits = 16; //We know this since we used opus
   const Endian endian = Endian.little;
   final int frameSize = ((sampleBits + 7) ~/ 8) * channels;
-  ByteData data = new ByteData(wavHeaderSize);
+  ByteData data = ByteData(wavHeaderSize);
   data.setUint32(4, fileSize - 4, endian);
   data.setUint32(16, 16, endian);
   data.setUint16(20, 1, endian);
@@ -158,4 +158,14 @@ Uint8List wavHeader(
   bytes.setAll(12, ascii.encode('fmt '));
   bytes.setAll(36, ascii.encode('data'));
   return bytes;
+}
+
+void _share(Uint8List data) async {
+  XFile file = XFile.fromData(
+    data,
+    mimeType: 'audio/wav',
+    name: 'output.wav',
+    length: data.length,
+  );
+  await Share.shareXFiles([file]);
 }
