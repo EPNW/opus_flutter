@@ -1,11 +1,11 @@
 name: opus_flutter_android
 description: Android implementation of the opus_flutter plugin.
 repository: https://github.com/EPNW/opus_flutter/tree/master/opus_flutter_android
-version: 3.0.0
+version: 3.0.1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.0.0"
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: '>=3.3.0'
 
 dependencies:
   flutter:
@@ -13,12 +13,10 @@ dependencies:
   opus_flutter_platform_interface: ^3.0.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  flutter_lints: ^2.0.0
 
 flutter:
   plugin:
-    implements: opus_flutter
     platforms:
       android:
         package: eu.epnw.opus_flutter_android
