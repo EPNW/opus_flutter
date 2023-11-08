@@ -184,44 +184,39 @@ packages:
     source: path
     version: "3.0.2"
   opus_flutter_android:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: opus_flutter_android
-      sha256: bb2a317536a32cdaae1dde4be4286fd5bfaa65fc0249d5a624a1984c36600199
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0"
+      path: "../../opus_flutter_android"
+      relative: true
+    source: path
+    version: "3.0.1"
   opus_flutter_ios:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: opus_flutter_ios
-      sha256: "6f6d8379009c4959b738128102d67e491da8ce80394473d8e49663d31d551a41"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../opus_flutter_ios"
+      relative: true
+    source: path
     version: "3.0.0"
   opus_flutter_platform_interface:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: opus_flutter_platform_interface
-      sha256: "41180b74f1dacc131270d49815fd4eb46bd7cc5ad57aac84eab748d08de59138"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../opus_flutter_platform_interface"
+      relative: true
+    source: path
     version: "3.0.0"
   opus_flutter_web:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: opus_flutter_web
-      sha256: "037a4cdb27c3a1c05c85aed3dbe0a4b8c2f49ccce33cef259ef34f1815af6785"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../opus_flutter_web"
+      relative: true
+    source: path
     version: "3.0.3"
   opus_flutter_windows:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: opus_flutter_windows
-      sha256: "6a26862dd331c9c4b5e4c805efe3dd4e4a049e4a18bee230d994c25d72928a3b"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../opus_flutter_windows"
+      relative: true
+    source: path
     version: "3.0.0"
   path:
     dependency: transitive

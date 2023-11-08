@@ -14,6 +14,17 @@ dependencies:
   opus_flutter:
     path: ../
   cupertino_icons: ^1.0.6
+dependency_overrides:
+  opus_flutter_android:
+    path: ../../opus_flutter_android
+  opus_flutter_ios:
+    path: ../../opus_flutter_ios
+  opus_flutter_platform_interface:
+    path: ../../opus_flutter_platform_interface
+  opus_flutter_web:
+    path: ../../opus_flutter_web
+  opus_flutter_windows:
+    path: ../../opus_flutter_windows
 
 dev_dependencies:
   flutter_test:
