@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:opus_flutter/opus_flutter.dart' as opus_flutter;
 import 'package:opus_dart/opus_dart.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:platform_info/platform_info.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -161,9 +162,14 @@ Uint8List wavHeader(
 }
 
 void _share(Uint8List data) async {
+  String mimeType = 'audio/wav';
+  if (Platform.instance.isAndroid) {
+    // due to a bug in the share_plus plugin we need only wav
+    mimeType = 'wav';
+  }
   XFile file = XFile.fromData(
     data,
-    mimeType: 'audio/wav',
+    mimeType: mimeType,
     name: 'output.wav',
     length: data.length,
   );

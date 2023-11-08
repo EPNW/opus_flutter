@@ -6,3 +6,4 @@
 .idea
 build/
 opus_flutter/.vscode/
+opus_flutter/example/.vscode/
