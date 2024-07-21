@@ -1,20 +1,21 @@
 name: opus_flutter_example
 description: Demonstrates how to use the opus_flutter plugin.
-version: 2.0.0+2
+version: 3.0.0+3
 publish_to: "none"
 
 environment:
   sdk: '>=3.1.3 <4.0.0'
 
 dependencies:
-  opus_dart: ^3.0.1
+  opus_dart:
+    path: ../../../opus_dart
   flutter:
     sdk: flutter
-  share_plus: ^7.2.1
+  share_plus: ^9.0.0
   opus_flutter:
     path: ../
-  cupertino_icons: ^1.0.6
   platform_info: ^4.0.2
+
 dependency_overrides:
   opus_flutter_android:
     path: ../../opus_flutter_android
@@ -22,18 +23,15 @@ dependency_overrides:
     path: ../../opus_flutter_ios
   opus_flutter_platform_interface:
     path: ../../opus_flutter_platform_interface
-  opus_flutter_web:
-    path: ../../opus_flutter_web
   opus_flutter_windows:
     path: ../../opus_flutter_windows
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
   assets:
     - assets/s16le_16000hz_mono.raw
-    - assets/download.js

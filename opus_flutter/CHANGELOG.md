@@ -1,3 +1,9 @@
+## 4.0.0
+
+* libopus 1.5.2
+* BREAKING: Removed web support (also see changelog of [opus_dart](https://pub.dev/packages/opus_dart))
+
+
 ## 3.0.2
 
 * libopus 1.3.1

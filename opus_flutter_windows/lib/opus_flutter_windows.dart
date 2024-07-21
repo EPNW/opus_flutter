@@ -28,11 +28,11 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
     String src;
     String dst;
     if (Platform.version.contains('x64')) {
-      src = 'libopus_x64.dll.blob';
-      dst = 'libopus_x64.dll';
+      src = 'libopus.x64.dll.blob';
+      dst = 'libopus.x64.dll';
     } else {
-      src = 'libopus_x86.dll.blob';
-      dst = 'libopus_x86.dll';
+      src = 'libopus.x86.dll.blob';
+      dst = 'libopus.x86.dll';
     }
 
     f = new File('${dir.path}/$dst');
@@ -50,7 +50,7 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
   }
 
   /// Opens the shared opus library included in this plugin.
-  Future<dynamic> load() async {
+  Future<DynamicLibrary> load() async {
     String libPath = await _copyFiles();
     return DynamicLibrary.open(libPath);
   }

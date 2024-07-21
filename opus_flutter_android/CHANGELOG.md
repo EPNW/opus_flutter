@@ -1,3 +1,6 @@
+## 4.0.0
+* libopus 1.5.2
+
 ## 3.0.1
 * Upgraded gradle build files
 

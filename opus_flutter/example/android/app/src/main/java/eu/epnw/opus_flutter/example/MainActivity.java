@@ -1,4 +1,4 @@
-package eu.epnw.example;
+package eu.epnw.opus_flutter.example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

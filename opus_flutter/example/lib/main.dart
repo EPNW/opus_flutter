@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math' show min;
 import 'dart:typed_data';
+import 'dart:io' show File;
 
 import 'package:flutter/material.dart';
 import 'package:opus_flutter/opus_flutter.dart' as opus_flutter;
@@ -162,16 +163,21 @@ Uint8List wavHeader(
 }
 
 void _share(Uint8List data) async {
-  String mimeType = 'audio/wav';
-  if (Platform.instance.isAndroid) {
-    // due to a bug in the share_plus plugin we need only wav
-    mimeType = 'wav';
+  if (Platform.instance.isWindows) {
+    File output = File('output.wav');
+    await output.writeAsBytes(data);
+  } else {
+    String mimeType = 'audio/wav';
+    if (Platform.instance.isAndroid) {
+      // due to a bug in the share_plus plugin we need only wav
+      mimeType = 'wav';
+    }
+    XFile file = XFile.fromData(
+      data,
+      mimeType: mimeType,
+      name: 'output.wav',
+      length: data.length,
+    );
+    await Share.shareXFiles([file]);
   }
-  XFile file = XFile.fromData(
-    data,
-    mimeType: mimeType,
-    name: 'output.wav',
-    length: data.length,
-  );
-  await Share.shareXFiles([file]);
 }

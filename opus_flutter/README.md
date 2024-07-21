@@ -8,7 +8,7 @@ The overall scheme is now the following:
 ![scheme](./doc/scheme.svg)
 
 ## Versioning
-Currently, opus 1.3.1 is loaded.
+Currently, opus 1.5.2 is loaded.
 
 ## Why are opus_dart and opus_flutter still two packages?
 The answer on that is simlple: dart is more than just flutter. With this split approach, it is easy to obtain a `DynamicLibrary` on flutter-based projects, but it is still possible to use opus_dart without flutter (e.g. on headless servers where there is no need for flutter). An other adventage for flutter developers with this split is, that they have a convenient way to obtain opus as `DynamicLibrary`, but are not forced to use it with opus_dart.
