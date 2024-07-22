@@ -1,3 +1,8 @@
+## 3.0.3
+
+* Depend on `opus_flutter_ios:3.0.1` and `opus_flutter_android:3.0.1`
+
+
 ## 3.0.2
 
 * libopus 1.3.1
