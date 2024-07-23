@@ -12,12 +12,11 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
 
   static Future<String> _copyFiles() async {
     String tmpPath = (await getTemporaryDirectory()).absolute.path;
-    Directory dir =
-        new Directory('$tmpPath/opus_flutter_windows/opus').absolute;
+    Directory dir = Directory('$tmpPath/opus_flutter_windows/opus').absolute;
     await dir.create(recursive: true);
 
     ByteData data;
-    File f = new File('${dir.path}/$_licenseFile');
+    File f = File('${dir.path}/$_licenseFile');
     if (!(await f.exists())) {
       data = await rootBundle
           .load('packages/opus_flutter_windows/assets/$_licenseFile');
@@ -35,7 +34,7 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
       dst = 'libopus.x86.dll';
     }
 
-    f = new File('${dir.path}/$dst');
+    f = File('${dir.path}/$dst');
     if (!(await f.exists())) {
       data = await rootBundle.load('packages/opus_flutter_windows/assets/$src');
       await f.writeAsBytes(
@@ -44,9 +43,9 @@ class OpusFlutterWindows extends OpusFlutterPlatform {
     return f.path;
   }
 
-  /// Registers the Windows implementation.
+  /// Registers this class as the default instance of [OpusFlutterPlatform].
   static void registerWith() {
-    OpusFlutterPlatform.instance = new OpusFlutterWindows();
+    OpusFlutterPlatform.instance = OpusFlutterWindows();
   }
 
   /// Opens the shared opus library included in this plugin.

@@ -18,7 +18,7 @@ abstract class OpusFlutterPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static OpusFlutterPlatform _instance = new OpusFlutterPlatformUnsupported();
+  static OpusFlutterPlatform _instance = OpusFlutterPlatformUnsupported();
 
   /// The default instance of [OpusFlutterPlatform] to use,
   /// defaults to [OpusFlutterPlatformUnsupported].
