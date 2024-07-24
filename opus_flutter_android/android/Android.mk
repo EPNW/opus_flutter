@@ -1,13 +1,15 @@
 LOCAL_PATH := $(call my-dir)/libopus
 include $(CLEAR_VARS)
 LOCAL_MODULE := opus
-LOCAL_OPUS_VERSION := '"1.5.1"'
+LOCAL_OPUS_VERSION := '"1.5.2"'
+LOCAL_CFLAGS := -DPACKAGE_VERSION=$(LOCAL_OPUS_VERSION)
 # Fix for Windows, not related to opus: https://stackoverflow.com/questions/12598933
 LOCAL_SHORT_COMMANDS := true
 APP_SHORT_COMMANDS := true
 
 # The variable declarations in this file is based on
 # https://android.googlesource.com/platform/external/libopus/+/5ba9953ee4045966d61fe4b65a307fb80679bbd8/Android.bp
+# Note that in LOCAL_CFLAGS += instead of := is used!
 
 # export_include_dirs and local_include_dirs
 LOCAL_C_INCLUDES := \
@@ -153,7 +155,7 @@ $(LOCAL_PATH)/src/mlp.c \
 $(LOCAL_PATH)/src/mlp_data.c
 
 # cflags
-LOCAL_CFLAGS := \
+LOCAL_CFLAGS += \
 -DNULL=0 \
 -DSOCKLEN_T=socklen_t \
 -DLOCALE_NOT_USED \
