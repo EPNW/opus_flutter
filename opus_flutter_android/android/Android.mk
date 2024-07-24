@@ -2,12 +2,16 @@ LOCAL_PATH := $(call my-dir)/libopus
 include $(CLEAR_VARS)
 LOCAL_MODULE := opus
 LOCAL_OPUS_VERSION := '"1.5.1"'
+# Fix for Windows, not related to opus: https://stackoverflow.com/questions/12598933
+LOCAL_SHORT_COMMANDS := true
+APP_SHORT_COMMANDS := true
 
 # The variable declarations in this file is based on
 # https://android.googlesource.com/platform/external/libopus/+/5ba9953ee4045966d61fe4b65a307fb80679bbd8/Android.bp
 
-# local_include_dirs
+# export_include_dirs and local_include_dirs
 LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/include \
 $(LOCAL_PATH)/src \
 $(LOCAL_PATH)/silk \
 $(LOCAL_PATH)/celt \
@@ -279,10 +283,8 @@ ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
     LOCAL_CFLAGS += $(LOCAL_ARM_CFLAGS)
 endif
 # Since in the current release, the Android.bp this .mk file is based
-# on does not support arm64-v8a yet, we use the old arm files, too
+# on does not support arm64-v8a yet, this block is empty
 ifeq ($(TARGET_ARCH_ABI),arm64-v8a)
-    LOCAL_SRC_FILES += $(LOCAL_ARM_SRCS)
-    LOCAL_CFLAGS += $(LOCAL_ARM_CFLAGS)
 endif
 # Acording to https://developer.android.com/ndk/guides/abis...
 # ...Android x86 supports SSSE3
