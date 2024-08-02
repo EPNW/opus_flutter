@@ -1,11 +1,12 @@
 import 'dart:convert';
 import 'dart:math' show min;
 import 'dart:typed_data';
-import 'dart:io' show File;
+import 'dart:io' show Directory, File;
 
 import 'package:flutter/material.dart';
 import 'package:opus_flutter/opus_flutter.dart' as opus_flutter;
 import 'package:opus_dart/opus_dart.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:platform_info/platform_info.dart';
 
@@ -172,12 +173,14 @@ void _share(Uint8List data) async {
       // due to a bug in the share_plus plugin we need only wav
       mimeType = 'wav';
     }
-    XFile file = XFile.fromData(
-      data,
-      mimeType: mimeType,
-      name: 'output.wav',
-      length: data.length,
-    );
+    final Directory tempDir = await getTemporaryDirectory();
+    final String path = '${tempDir.path}/output.wav';
+    File f = File(path);
+    await f.create();
+    await f.writeAsBytes(data);
+    XFile file = XFile(path,
+        mimeType: mimeType, name: 'output.wav', length: data.length);
     await Share.shareXFiles([file]);
+    await f.delete();
   }
 }
