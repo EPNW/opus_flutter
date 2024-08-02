@@ -212,7 +212,7 @@ packages:
       path: "../../opus_flutter_ios"
       relative: true
     source: path
-    version: "4.0.1"
+    version: "4.0.0"
   opus_flutter_platform_interface:
     dependency: "direct overridden"
     description:
