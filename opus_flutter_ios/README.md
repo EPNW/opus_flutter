@@ -32,7 +32,21 @@ dependencies:
 ```
 
 ## How opus is contained in this package
-[opus_xcframework](https://github.com/EPNW/opus_xcframework) is incorporated into this plugin.
+An `opus.xcframework` is incorporated into this plugin, in the spirit of
+[opus_xcframework](https://github.com/EPNW/opus_xcframework).
+
+It carries three architectures:
+
+| Slice | Used for |
+| --- | --- |
+| `ios-arm64` | devices |
+| `ios-arm64_x86_64-simulator` | simulators, on Apple Silicon and Intel hosts |
+
+To reproduce it from an official opus release, run:
+
+```bash
+./tool/build_opus_xcframework.sh
+```
 
 
 [1]: ../opus_flutter
